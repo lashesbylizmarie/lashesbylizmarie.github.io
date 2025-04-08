@@ -3074,7 +3074,6 @@ input, select, textarea {
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
-		min-height:100dvh; /* Coming Soon: temporary */
 	}
 
 		#header h1 {
@@ -3116,17 +3115,16 @@ input, select, textarea {
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
 				display: block;
-				margin: 0 0 0 0;
+				margin: 0 0 1.5em 0;
 			}
 
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					width: 75%; /* Coming soon: temporary */
-					max-width: 500px; /* Coming soon: temporary */
+					width: 75%;
+					max-width: 500px;
 				}
 
-				/* Coming soon: temporary */
 				#header.alt #profile img {
 					width: 55%;
 					min-width: 100px;
