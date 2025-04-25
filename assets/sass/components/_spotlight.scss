@@ -29,12 +29,12 @@
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
+			border-radius: 8px;
 			border: solid 1px;
 
 			img {
 				display: block;
-				border-radius: 100%;
+				border-radius: 8px;
 				width: 16em;
 			}
 		}
@@ -78,6 +78,24 @@
 				img {
 					width: 12em;
 				}
+			}
+		}
+	}
+
+	.spotlight.img-first {
+		.image {
+			margin-left: 0;
+			margin-right: 4em;
+		}
+
+		@include breakpoint('<=medium') {
+			-moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+
+			.image {
+				margin-right: 0;
 			}
 		}
 	}
