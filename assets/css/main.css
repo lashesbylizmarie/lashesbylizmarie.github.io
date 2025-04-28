@@ -2552,20 +2552,25 @@ table.alt tbody tr td {
   -webkit-transition-delay: 0s;
   -ms-transition-delay: 0s;
   transition-delay: 0s;
-  display: block;
-  margin: 0 0 1.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 0 0.5em 0;
 }
 #header.alt .logo img {
   display: block;
-  margin: 0 auto;
-  width: 75%;
-  max-width: 500px;
 }
-#header.alt #profile img {
-  width: 55%;
-  min-width: 100px;
-  max-width: 250px;
+#header.alt #logo-profile {
+  flex: 0 0 20%;
+  max-width: 20%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   border-radius: 50%;
+}
+#header.alt #logo-text {
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 @media screen and (max-width: 1280px) {
   #header {
@@ -2581,6 +2586,14 @@ table.alt tbody tr td {
   }
   #header.alt {
     padding: 5em 3em 2em 3em;
+  }
+  #header.alt #logo-profile {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  #header.alt #logo-text {
+    flex: 0 0 60%;
+    max-width: 60%;
   }
 }
 @media screen and (max-width: 736px) {
@@ -2600,6 +2613,17 @@ table.alt tbody tr td {
   #header.alt h1 {
     font-size: 2.5em;
   }
+  #header.alt .logo {
+    gap: 1.5rem;
+  }
+  #header.alt #logo-profile {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  #header.alt #logo-text {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
 }
 @media screen and (max-width: 480px) {
   #header {
@@ -2607,6 +2631,19 @@ table.alt tbody tr td {
   }
   #header.alt {
     padding: 4em 1.5em 1em 1.5em;
+  }
+  #header.alt .logo {
+    display: block;
+  }
+  #header.alt .logo img {
+    margin: 0 auto;
+  }
+  #header.alt #logo-profile {
+    max-width: 50%;
+    margin-bottom: 10px;
+  }
+  #header.alt #logo-text {
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 360px) {

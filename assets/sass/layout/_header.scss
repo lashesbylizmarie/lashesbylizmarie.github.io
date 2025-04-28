@@ -38,22 +38,28 @@
 					'transform 0.5s ease'
 				));
 				@include vendor('transition-delay', '0s');
-				display: block;
-				margin: 0 0 (_size(element-margin) * 0.75) 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 2rem;
+				margin: 0 0 (_size(element-margin) * 0.25) 0;
 
 				img {
 					display: block;
-					margin: 0 auto;
-					width: 75%;
-					max-width: 500px;
 				}
 			}
 
-			#profile img {
-				width: 55%;
-				min-width: 100px;
-				max-width: 250px;
+			#logo-profile {
+				flex: 0 0 20%;
+				max-width: 20%;
+				aspect-ratio: 1 / 1;
+				object-fit: cover;
 				border-radius: 50%;
+			}
+
+			#logo-text {
+				flex: 0 0 50%;
+				max-width: 50%;
 			}
 		}
 
@@ -70,6 +76,16 @@
 
 			&.alt {
 				@include padding(4em, 3em, (1em, 0, 0, 0));
+
+				#logo-profile {
+					flex: 0 0 30%;
+					max-width: 30%;
+				}
+	
+				#logo-text {
+					flex: 0 0 60%;
+					max-width: 60%;
+				}
 			}
 		}
 
@@ -91,6 +107,20 @@
 				h1 {
 					font-size: 2.5em;
 				}
+
+				.logo {
+					gap: 1.5rem;
+				}
+	
+				#logo-profile {
+					flex: 0 0 30%;
+					max-width: 30%;
+				}
+	
+				#logo-text {
+					flex: 0 0 70%;
+					max-width: 70%;
+				}
 			}
 		}
 
@@ -99,6 +129,23 @@
 
 			&.alt {
 				@include padding(3em, 1.5em, (1em, 0, 0, 0));
+
+				.logo {
+					display: block;
+
+					img {
+						margin: 0 auto;
+					}
+				}
+
+				#logo-profile {
+					max-width: 50%;
+					margin-bottom: 10px;
+				}
+	
+				#logo-text {
+					max-width: 90%;
+				}
 			}
 		}
 
