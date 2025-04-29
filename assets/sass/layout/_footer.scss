@@ -9,9 +9,9 @@
 	#footer {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
-		@include padding(5em, 5em);
+		@include padding(0, 5em, (5em 0 0 0));
 		width: calc(100% + #{_size(element-margin)});
-		margin: 0 0 (_size(element-margin) * 1.5) (_size(element-margin) * -1);
+		margin: 0 0 0 (_size(element-margin) * -1);
 
 		> * {
 			width: calc(50% - #{_size(element-margin)});

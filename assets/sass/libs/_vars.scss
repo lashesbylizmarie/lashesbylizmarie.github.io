@@ -20,6 +20,7 @@
 // Font.
 	$font: (
 		family:				('Source Sans Pro', Helvetica, serif),
+		family-h:           ('Playfair Display', Georgia, 'Times New Roman', Times, serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				300,
 		weight-bold:		400,
@@ -39,7 +40,7 @@
 
 		invert: (
 			bg:				#ffffff,
-			bg-alt:			#fcf8f2,
+			bg-alt:			#faf3ec,
 			fg:				#3C2C1B,
 			fg-bold:		#3C2C1B,
 			fg-light:		rgba(99,99,99,0.25),
