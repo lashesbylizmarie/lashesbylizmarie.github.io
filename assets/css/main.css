@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   margin: 0 0 0.7em 0;
   letter-spacing: -0.025em;
+  color: #5d452b !important;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
@@ -226,6 +227,10 @@ h5 {
 
 h6 {
   font-size: 0.7em;
+}
+
+i {
+  color: #5d452b !important;
 }
 
 @media screen and (max-width: 736px) {
