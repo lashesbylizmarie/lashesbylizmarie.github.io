@@ -2291,6 +2291,7 @@ table.alt tbody tr td {
   margin: 0 0 3em -2em;
   padding: 0;
   list-style: none;
+  text-align: left;
 }
 .features li {
   width: calc(33.3333333333% - 2em);
@@ -2303,6 +2304,25 @@ table.alt tbody tr td {
 }
 .features li > :last-child {
   margin-bottom: 0;
+}
+.features li div {
+  display: flex;
+  align-items: center;
+}
+.features li i {
+  width: 30px;
+  text-align: center;
+}
+.features li strong {
+  width: 120px;
+}
+.features li span {
+  margin-left: 10px;
+}
+@media screen and (max-width: 1280px) {
+  .features li {
+    width: 32%;
+  }
 }
 @media screen and (max-width: 980px) {
   .features li {
@@ -2319,7 +2339,7 @@ table.alt tbody tr td {
   }
   .features li {
     width: 100%;
-    margin-left: 0;
+    margin-left: 2em;
     margin-top: 2em;
   }
   .features li:nth-child(2), .features li:nth-child(3) {
@@ -2556,7 +2576,7 @@ table.alt tbody tr td {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 2em 0;
 }
 #header.alt .logo img {
   display: block;

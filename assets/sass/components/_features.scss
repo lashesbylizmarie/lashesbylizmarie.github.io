@@ -14,6 +14,7 @@
 		margin: 0 0 (_size(element-margin) * 1.5) (_size(element-margin) * -1);
 		padding: 0;
 		list-style: none;
+		text-align: left;
 
 		li {
 			width: calc(#{(100% / 3)} - #{_size(element-margin)});
@@ -29,6 +30,30 @@
 
 			> :last-child {
 				margin-bottom: 0;
+			}
+
+			div {
+				display: flex;
+				align-items: center;
+			}
+
+			i {
+				width: 30px;
+				text-align: center;
+			}
+			strong {
+				width: 120px;
+			}
+
+			span {
+				margin-left: 10px;
+			}
+			
+		}
+
+		@include breakpoint('<=large') {
+			li {
+				width: 32%;
 			}
 		}
 
@@ -48,7 +73,7 @@
 
 			li {
 				width: 100%;
-				margin-left: 0;
+				margin-left: _size(element-margin);
 				margin-top: _size(element-margin);
 
 				&:nth-child(2),
