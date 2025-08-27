@@ -18,7 +18,7 @@
 		width: _size(inner);
 		max-width: calc(100% - #{_size(element-margin) * 2});
 		padding: 1em;
-		background-color: _palette(invert, bg-alt);
+		background-color: _palette(invert, bg);
 		border-top-left-radius: _size(border-radius-main);
 		border-top-right-radius: _size(border-radius-main);
 		cursor: default;
@@ -59,7 +59,7 @@
 					}
 
 					&.active {
-						background-color: _palette(invert, bg);
+						background-color: _palette(invert, bg-alt);
 						box-shadow: none;
 					}
 				}
@@ -70,7 +70,7 @@
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: transparentize(_palette(invert, bg-alt), 0.05);
+			background-color: transparentize(_palette(invert, bg), 0.05);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: _misc(z-index-base);
