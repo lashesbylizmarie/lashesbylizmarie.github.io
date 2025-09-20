@@ -16,6 +16,7 @@
 			'background-color #{_duration(transition)} ease-in-out',
 			'color #{_duration(transition)} ease-in-out'
 		));
+		margin-top: 10px;
 		border-radius: _size(border-radius);
 		border: 0;
 		cursor: pointer;

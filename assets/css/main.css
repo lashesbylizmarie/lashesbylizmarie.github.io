@@ -1475,6 +1475,7 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  margin-top: 10px;
   border-radius: 8px;
   border: 0;
   cursor: pointer;
@@ -2339,8 +2340,30 @@ table.alt tbody tr td {
 .features li strong {
   width: 120px;
 }
-.features li span {
-  margin-left: 10px;
+.features li .image {
+  display: inline-block;
+  padding: 0.65em;
+  border-radius: 12px;
+  border: solid 1px #dddddd;
+}
+.features li .image img {
+  display: block;
+  border-radius: 8px;
+  width: 10em;
+}
+.features li .service-list {
+  display: flex;
+  justify-content: space-between;
+  width: 14em;
+  flex-wrap: wrap;
+}
+.features li .service-list .service {
+  min-width: 80%;
+}
+.features li .service-list .price {
+  font-weight: bold;
+  text-align: right;
+  min-width: 10%;
 }
 @media screen and (max-width: 1280px) {
   .features li {
@@ -2468,6 +2491,7 @@ table.alt tbody tr td {
   -ms-align-items: center;
   align-items: center;
   margin: 0 0 2em 0;
+  text-align: center;
 }
 .spotlight .content {
   -moz-flex: 1;
@@ -2481,6 +2505,10 @@ table.alt tbody tr td {
 .spotlight .content header.major {
   margin: 0 0 2em 0;
 }
+.spotlight .content header.major h2:after {
+  margin-left: auto;
+  margin-right: auto;
+}
 .spotlight .image {
   display: inline-block;
   margin-left: 4em;
@@ -2493,13 +2521,15 @@ table.alt tbody tr td {
   border-radius: 8px;
   width: 16em;
 }
+.spotlight p {
+  text-align: left;
+}
 @media screen and (max-width: 980px) {
   .spotlight {
     -moz-flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    text-align: center;
   }
   .spotlight .content {
     -moz-flex: 0 1 auto;
@@ -2507,10 +2537,6 @@ table.alt tbody tr td {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     width: 100%;
-  }
-  .spotlight .content header.major h2:after {
-    margin-left: auto;
-    margin-right: auto;
   }
   .spotlight .content .actions {
     -moz-justify-content: center;

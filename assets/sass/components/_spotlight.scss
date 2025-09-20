@@ -10,6 +10,7 @@
 		@include vendor('display', 'flex');
 		@include vendor('align-items', 'center');
 		margin: 0 0 _size(element-margin) 0;
+		text-align: center;
 
 		.content {
 			@include vendor('flex', '1');
@@ -21,6 +22,13 @@
 			header {
 				&.major {
 					margin: 0 0 _size(element-margin) 0;
+
+					h2 {
+						&:after {
+							margin-left: auto;
+							margin-right: auto;
+						}
+					}
 				}
 			}
 		}
@@ -39,24 +47,16 @@
 			}
 		}
 
+		p {
+			text-align: left;
+		}
+
 		@include breakpoint('<=medium') {
 			@include vendor('flex-direction', 'column-reverse');
-			text-align: center;
 
 			.content {
 				@include vendor('flex', '0 1 auto');
 				width: 100%;
-
-				header {
-					&.major {
-						h2 {
-							&:after {
-								margin-left: auto;
-								margin-right: auto;
-							}
-						}
-					}
-				}
 
 				.actions {
 					@include vendor('justify-content', 'center');
