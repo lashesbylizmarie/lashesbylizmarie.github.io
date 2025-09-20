@@ -47,8 +47,25 @@
 			}
 		}
 
-		p {
+		p, ul {
 			text-align: left;
+		}
+
+		ul {
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+
+		li {
+			padding-left: 1em;
+			text-indent: -1em;
+		}
+
+		li:before {
+			content: "✦";
+			color: _palette(bg2);
+			padding-right: 15px;
 		}
 
 		@include breakpoint('<=medium') {
@@ -103,7 +120,7 @@
 	@mixin color-spotlight($p: null) {
 		.spotlight {
 			.image {
-				border-color: _palette($p, border);
+				border-color: _palette($p, border2);
 			}
 		}
 	}
