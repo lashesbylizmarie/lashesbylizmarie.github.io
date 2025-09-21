@@ -3128,6 +3128,18 @@ body.is-preload #header.alt .logo {
   font-size: 0.8em;
   text-align: center;
 }
+#footer .contact ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#footer .contact i {
+  margin-right: 1em;
+}
+#footer .contact a {
+  text-decoration: none;
+  border-bottom: none;
+}
 @media screen and (max-width: 1280px) {
   #footer {
     padding: 4em 4em 2em 4em;
