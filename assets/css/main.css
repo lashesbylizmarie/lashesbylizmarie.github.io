@@ -96,10 +96,10 @@ html {
 
 body {
   background-color: #D3B99C;
-  background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ffffff 60%, #efe0ce 85%);
-  background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ffffff 60%, #efe0ce 85%);
-  background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ffffff 60%, #efe0ce 85%);
-  background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 60%, #efe0ce 85%);
+  background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ece4da 60%, #e6d6c2 85%);
+  background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ece4da 60%, #e6d6c2 85%);
+  background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ece4da 60%, #e6d6c2 85%);
+  background-image: url("images/overlay.png"), linear-gradient(45deg, #ece4da 60%, #e6d6c2 85%);
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
   -moz-animation: none !important;
@@ -113,18 +113,18 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 @media screen and (max-width: 980px) {
   body {
-    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ffffff 70%, #efe0ce 90%);
-    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ffffff 70%, #efe0ce 90%);
-    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ffffff 70%, #efe0ce 90%);
-    background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 70%, #efe0ce 90%);
+    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ece4da 70%, #e6d6c2 90%);
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ece4da 70%, #e6d6c2 90%);
+    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ece4da 70%, #e6d6c2 90%);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #ece4da 70%, #e6d6c2 90%);
   }
 }
 @media screen and (max-width: 480px) {
   body {
-    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ffffff 80%, #efe0ce 95%);
-    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ffffff 80%, #efe0ce 95%);
-    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ffffff 80%, #efe0ce 95%);
-    background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 80%, #efe0ce 95%);
+    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ece4da 80%, #e6d6c2 95%);
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ece4da 80%, #e6d6c2 95%);
+    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ece4da 80%, #e6d6c2 95%);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #ece4da 80%, #e6d6c2 95%);
   }
 }
 
@@ -1862,7 +1862,6 @@ input[type=radio]:focus + label:before {
   display: inline-block;
   border-radius: 100%;
   padding: 0.65em;
-  margin: 0 0 2em 0;
   cursor: default;
 }
 .icon.major:before {
@@ -1902,25 +1901,6 @@ input[type=radio]:focus + label:before {
 }
 .icon.style5 {
   color: #c2976c;
-}
-@media screen and (max-width: 1680px) {
-  .icon.major:before {
-    font-size: 5.5rem;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .icon.major:before {
-    font-size: 4.75rem;
-  }
-}
-@media screen and (max-width: 736px) {
-  .icon.major {
-    margin: 0 0 1.5em 0;
-    padding: 0.35em;
-  }
-  .icon.major:before {
-    font-size: 3.5rem;
-  }
 }
 
 .icon.major {
@@ -2324,9 +2304,6 @@ table.alt tbody tr td {
   margin-top: 3em;
   padding: 0;
 }
-.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
-  margin-top: 0;
-}
 .features li > :last-child {
   margin-bottom: 0;
 }
@@ -2344,6 +2321,22 @@ table.alt tbody tr td {
 .features li span {
   margin-left: 10px;
 }
+.features .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4em;
+  padding: 0.65em;
+  border-radius: 100%;
+  border: solid 1px;
+  margin: 0 0 2em 1em;
+  width: 8.5em;
+  height: 8.5em;
+}
+.features .image img {
+  width: 7.3em;
+  height: 7.3em;
+}
 @media screen and (max-width: 1280px) {
   .features li {
     width: 32%;
@@ -2352,9 +2345,6 @@ table.alt tbody tr td {
 @media screen and (max-width: 980px) {
   .features li {
     width: calc(50% - 2em);
-  }
-  .features li:nth-child(3) {
-    margin-top: 3em;
   }
 }
 @media screen and (max-width: 736px) {
@@ -2367,9 +2357,13 @@ table.alt tbody tr td {
     margin-left: 2em;
     margin-top: 2em;
   }
-  .features li:nth-child(2), .features li:nth-child(3) {
-    margin-top: 2em;
+  .features .image {
+    margin: 0 0 1.5em 0;
   }
+}
+
+.features .image {
+  border-color: rgba(255, 255, 255, 0.35);
 }
 
 /* Statistics */
@@ -2514,7 +2508,7 @@ table.alt tbody tr td {
 }
 .spotlight li:before {
   content: "✦";
-  color: #efe0ce;
+  color: #e6d6c2;
   padding-right: 15px;
 }
 @media screen and (max-width: 980px) {
@@ -2819,7 +2813,7 @@ body.is-preload #header.alt .logo {
 #nav.alt ul li a {
   font-size: 0.9em;
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 980px) {
   #nav {
     display: none;
   }
@@ -3004,10 +2998,10 @@ body.is-preload #header.alt .logo {
 }
 #main header.major h2:after {
   background-color: #eeecec;
-  background-image: -moz-linear-gradient(90deg, #efe0ce, #D3B99C, #faf3ec);
-  background-image: -webkit-linear-gradient(90deg, #efe0ce, #D3B99C, #faf3ec);
-  background-image: -ms-linear-gradient(90deg, #efe0ce, #D3B99C, #faf3ec);
-  background-image: linear-gradient(90deg, #efe0ce, #D3B99C, #faf3ec);
+  background-image: -moz-linear-gradient(90deg, #e6d6c2, #D3B99C, #faf3ec);
+  background-image: -webkit-linear-gradient(90deg, #e6d6c2, #D3B99C, #faf3ec);
+  background-image: -ms-linear-gradient(90deg, #e6d6c2, #D3B99C, #faf3ec);
+  background-image: linear-gradient(90deg, #e6d6c2, #D3B99C, #faf3ec);
 }
 #main table tbody tr {
   border-color: #eeecec;
@@ -3029,6 +3023,9 @@ body.is-preload #header.alt .logo {
 }
 #main .spotlight .image {
   border-color: #dddddd;
+}
+#main .features .image {
+  border-color: #eeecec;
 }
 #main > .main {
   padding: 5em 5em 3em 5em;
